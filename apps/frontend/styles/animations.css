@@ -1,0 +1,51 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.fade-enter {
+  animation: fadeIn 0.5s forwards;
+}
+
+.fade-exit {
+  animation: fadeOut 0.5s forwards;
+}
+
+.slide-enter {
+  animation: slideIn 0.5s forwards;
+}
+
+.slide-exit {
+  animation: slideOut 0.5s forwards;
+}

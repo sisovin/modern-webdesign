@@ -19,6 +19,25 @@ const Footer: React.FC = () => {
           </a>
         </div>
       </div>
+      <div className="container mx-auto px-4 mt-4">
+        <div className="flex justify-between">
+          <div>
+            <h4 className="text-lg font-bold">Contact Information</h4>
+            <p>Email: info@modernwebdesign.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Web Design St, Suite 100, Web City, WC 12345</p>
+          </div>
+          <div>
+            <h4 className="text-lg font-bold">Quick Links</h4>
+            <ul>
+              <li><a href="/about" className="hover:text-blue-500">About Us</a></li>
+              <li><a href="/services" className="hover:text-blue-500">Services</a></li>
+              <li><a href="/contact" className="hover:text-blue-500">Contact</a></li>
+              <li><a href="/privacy" className="hover:text-blue-500">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 };
