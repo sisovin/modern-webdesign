@@ -1,0 +1,168 @@
+:root {
+    --primary-light: #4a5568;
+    /* A lighter shade for dark mode */
+
+    /* Hero Carousel specific variables */
+    --carousel-overlay-opacity: 0.4;
+    --carousel-indicator-size: 12px;
+    --carousel-indicator-active-size: 14px;
+    --carousel-transition: all 0.3s ease-in-out;
+    --carousel-nav-button-bg: rgba(255, 255, 255, 0.5);
+    --carousel-nav-button-hover-bg: rgba(255, 255, 255, 0.8);
+    --carousel-nav-button-size: 48px;
+}
+
+.dark {
+    --primary-light: #a0aec0;
+    /* Lighter in dark mode for better visibility */
+    --carousel-overlay-opacity: 0.6;
+    --carousel-nav-button-bg: rgba(0, 0, 0, 0.5);
+    --carousel-nav-button-hover-bg: rgba(0, 0, 0, 0.8);
+}
+
+/* Additional utility classes for theme support */
+.text-primary-light {
+    color: var(--primary-light);
+}
+
+.bg-primary-light {
+    background-color: var(--primary-light);
+}
+
+/* Improved hover effects for both themes */
+.hover\:text-primary-light:hover {
+    color: var(--primary-light);
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 640px) {
+    .topbar-container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+/* Ensure social icons are consistently sized across devices */
+.social-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+@media (min-width: 768px) {
+    .social-icon {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}
+
+/* Hero Carousel Styles */
+.hero-carousel-container {
+    position: relative;
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.hero-carousel-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, var(--carousel-overlay-opacity));
+}
+
+.hero-carousel-indicator {
+    width: var(--carousel-indicator-size);
+    height: var(--carousel-indicator-size);
+    border-radius: 50%;
+    overflow: hidden;
+    transition: var(--carousel-transition);
+}
+
+.hero-carousel-indicator.active {
+    width: var(--carousel-indicator-active-size);
+    height: var(--carousel-indicator-active-size);
+    border-color: var(--primary);
+}
+
+/* Animation support for carousel */
+.animate-fade-in-slow {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.animate-slide-left {
+    animation: slideLeft 0.8s ease-in-out;
+}
+
+.animate-slide-right {
+    animation: slideRight 0.8s ease-in-out;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Hero Carousel Navigation Button Styles */
+.carousel-nav-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: var(--carousel-transition);
+}
+
+.carousel-nav-button-prev {
+    left: 0;
+    padding-left: 0.5rem;
+}
+
+.carousel-nav-button-next {
+    right: 0;
+    padding-right: 0.5rem;
+}
+
+.carousel-nav-button button {
+    background-color: var(--carousel-nav-button-bg);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border-radius: 50%;
+    width: var(--carousel-nav-button-size);
+    height: var(--carousel-nav-button-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--carousel-transition);
+}
+
+.carousel-nav-button button:hover {
+    background-color: var(--carousel-nav-button-hover-bg);
+    transform: scale(1.05);
+}
+
+@media (max-width: 640px) {
+    .carousel-nav-button button {
+        width: calc(var(--carousel-nav-button-size) * 0.8);
+        height: calc(var(--carousel-nav-button-size) * 0.8);
+    }
+}

@@ -1,14 +1,49 @@
 import React from 'react';
+import HeroCarousel from '@/components/HeroCarousel';
+import FactsCard from '@/components/FactsCard';
+import AboutSection from '@/components/AboutSection';
+import ServiceCards from '@/components/ServiceCards';
+import FeatureCard from '@/components/FeatureCard';
+import ProjectCard from '@/components/ProjectCard';
+import TeamCard from '@/components/TeamCard';
+import TestimonialCarousel from '@/components/TestimonialCarousel';
 
-const Home: React.FC = () => {
+export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <h1 className="text-4xl font-bold mb-4">Welcome to Modern Web Design</h1>
-      <p className="text-lg text-center max-w-2xl">
-        This project showcases a modern web design using Next.js for the frontend and Django for the backend. Explore the various features and components to learn more about the project.
-      </p>
-    </div>
-  );
-};
+    <main className=" w-full max-w-full flex-grow site-content">
+      {/* Carousel Start */}
+      <HeroCarousel />
+      {/* Carousel End */}
 
-export default Home;
+      {/* Facts Start */}
+      <FactsCard />
+      {/* Facts End */}
+
+      {/* About Start */}
+      <AboutSection />
+      {/* About End */}
+      
+      {/* Service Start */}
+      <ServiceCards />
+      {/* Service End */}
+
+      {/* <!-- Feature Start --> */}
+      <FeatureCard />
+      {/* <!-- Feature End -->  */}
+
+      {/* Project Start */}
+     <ProjectCard />
+      {/* Project End */}
+
+      {/* Team Start */}
+      <TeamCard />
+      
+      {/* Team End */}
+
+      {/* Testimonial Start */}
+      <TestimonialCarousel />
+      
+      {/* Testimonial End */}
+    </main>
+  );
+}

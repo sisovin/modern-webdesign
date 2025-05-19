@@ -1,0 +1,16 @@
+/* Header Carousel Indicator Styles - without @apply directive */
+.header-carousel-indicator {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    border: 2px solid white;
+    border-radius: 60px;
+    overflow: hidden;
+    text-indent: 0;
+}
+
+.header-carousel-indicator-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

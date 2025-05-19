@@ -1,0 +1,43 @@
+/* Service cards specific styles */
+.service-section {
+    padding: 3rem 0;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 1rem;
+}
+
+.section-title-container {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-item {
+    background: #fff;
+    transition: .5s;
+    border: 1px solid transparent;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+.service-item:hover {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .15);
+    border-color: var(--primary);
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.display-6 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}

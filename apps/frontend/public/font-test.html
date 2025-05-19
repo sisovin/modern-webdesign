@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Test</title>
+    <style>
+        @font-face {
+            font-family: 'Inter Test';
+            src: url('/fonts/Inter-Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Poppins Test';
+            src: url('/fonts/Poppins-Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        .inter-text {
+            font-family: 'Inter Test', sans-serif;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .poppins-text {
+            font-family: 'Poppins Test', sans-serif;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .status {
+            margin-top: 30px;
+            font-family: system-ui, sans-serif;
+        }
+
+        h1 {
+            font-family: system-ui, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Font Loading Test</h1>
+
+    <div class="inter-text">This text should be in Inter font.</div>
+    <div class="poppins-text">This text should be in Poppins font.</div>
+
+    <div class="status">
+        <h3>Font Status:</h3>
+        <div id="fontStatus">Checking font loading status...</div>
+    </div>
+
+    <script>
+        // Check if fonts are loaded
+        document.fonts.ready.then(function () {
+            const interLoaded = document.fonts.check('1em "Inter Test"');
+            const poppinsLoaded = document.fonts.check('1em "Poppins Test"');
+
+            const statusDiv = document.getElementById('fontStatus');
+            statusDiv.innerHTML = `
+                <p>Inter font loaded: ${interLoaded ? '✅ Yes' : '❌ No'}</p>
+                <p>Poppins font loaded: ${poppinsLoaded ? '✅ Yes' : '❌ No'}</p>
+            `;
+        });
+    </script>
+</body>
+
+</html>

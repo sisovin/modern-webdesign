@@ -1,0 +1,50 @@
+/* Font utility classes */
+
+/* For headings (h1, h2, h3, etc.) */
+.font-heading {
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-weight: 600;
+}
+
+/* For paragraph text */
+.font-body {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 400;
+}
+
+/* Weight utilities */
+.font-regular {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+/* Element-specific font assignments */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', system-ui, sans-serif;
+}
+
+p, div, span, a {
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Font display classes for demo/testing */
+.font-test-inter {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.font-test-poppins {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+}

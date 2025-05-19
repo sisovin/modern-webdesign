@@ -1,0 +1,69 @@
+.progress {
+    background-color: #f8f9fa;
+    height: 10px;
+    border-radius: 5px;
+    overflow: visible; /* Changed from hidden to visible to show percentages */
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.progressBar {
+    background-color: #0d6efd;
+    /* primary color */
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.5s ease-out;
+    position: relative;
+}
+
+/* Add specific classes for different percentages */
+.progressBar0 { width: 0%; }
+.progressBar5 { width: 5%; }
+.progressBar10 { width: 10%; }
+.progressBar15 { width: 15%; }
+.progressBar20 { width: 20%; }
+.progressBar25 { width: 25%; }
+.progressBar30 { width: 30%; }
+.progressBar35 { width: 35%; }
+.progressBar40 { width: 40%; }
+.progressBar45 { width: 45%; }
+.progressBar50 { width: 50%; }
+.progressBar55 { width: 55%; }
+.progressBar60 { width: 60%; }
+.progressBar65 { width: 65%; }
+.progressBar70 { width: 70%; }
+.progressBar75 { width: 75%; }
+.progressBar80 { width: 80%; }
+.progressBar85 { width: 85%; }
+.progressBar90 { width: 90%; }
+.progressBar95 { width: 95%; }
+.progressBar100 { width: 100%; }
+
+.progressPercent {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    color: #0d6efd;
+    font-weight: 600;
+    font-size: 14px;
+    transition: right 0.5s ease-out;
+    white-space: nowrap;
+}
+
+.skill {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.imgBorder {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+.featureImage {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}

@@ -1,0 +1,32 @@
+/**
+ * CSS Error-Fix Override Stylesheet
+ * 
+ * This stylesheet attempts to disable problematic Tailwind parsing 
+ * by setting up defined classes for the problematic utility classes.
+ */
+
+/* Fix for text-indent-0 error */
+.text-indent-0 {
+    text-indent: 0 !important;
+}
+
+/* Fix for complex shadow classes */
+.hover\:shadow-\[0_0_45px_rgba\(0\,_0\,_0\,_\.07\)\]:hover {
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.07) !important;
+}
+
+/* Fix for linear gradient */
+.bg-\[linear-gradient\(rgba\(0\,_0\,_0\,_\.5\)\,_rgba\(0\,_0\,_0\,_\.5\)\)\,_url\(\/images\/carousel-1\.jpg\)\] {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/carousel-1.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+/* Use this class if the above doesn't work */
+.bg-overlay-dark {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/carousel-1.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}

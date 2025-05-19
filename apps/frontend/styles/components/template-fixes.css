@@ -1,0 +1,39 @@
+/* Template styles - modified to replace complex utility classes */
+
+/* This is a partial version with just the modifications needed.
+   It should be used to update the original template-tailwind.css file. */
+
+/* Fact item */
+.fact-item {
+    /* Replace complex Tailwind utility with CSS classes from shadow-effects.css */
+    transition: all 0.5s;
+}
+
+/* Service item */
+.service-item {
+    /* Replace complex Tailwind utility with CSS classes from shadow-effects.css */
+    border: 1px solid transparent;
+    transition: all 0.5s;
+}
+
+/* Page header */
+.page-header {
+    /* Use standard CSS as defined in page-header.css */
+}
+
+/* Header carousel indicator */
+.header-carousel-indicator {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    border: 2px solid white;
+    border-radius: 60px;
+    overflow: hidden;
+    text-indent: 0;
+}
+
+.header-carousel-indicator-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

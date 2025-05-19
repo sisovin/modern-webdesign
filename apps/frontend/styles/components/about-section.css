@@ -1,0 +1,92 @@
+/* About section specific styles */
+.section-title {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-right: 1rem;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    margin-right: -1rem;
+    background: var(--primary);
+}
+
+.section-title-line {
+    background: linear-gradient(to right, var(--primary), transparent);
+}
+
+.img-border {
+    position: relative;
+    height: 100%;
+    min-height: 400px;
+}
+
+.img-border::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 3rem;
+    bottom: 3rem;
+    border: 5px solid var(--primary);
+    border-radius: 0.25rem;
+}
+
+.img-border img {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    width: calc(100% - 3rem);
+    height: calc(100% - 3rem);
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.rounded-pill {
+    border-radius: 50rem;
+}
+
+/* Button styling */
+.btn-primary {
+    color: #fff;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+}
+
+/* Make sure container has proper padding */
+.container-xxl {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Founder image styling */
+.founder-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
