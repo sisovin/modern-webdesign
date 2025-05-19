@@ -84,7 +84,7 @@ frontend/.next
 /.env
 /.env.local
 
-# Project-specific
+# Added project specific entries
 .turbo/
 apps/backend/package.json
 apps/docs/
