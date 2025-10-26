@@ -19,6 +19,6 @@
   },
   "devDependencies": {
     "jest": "^27.0.0",
-    "pnpm": "^6.0.0"
+    "pnpm": "^10.19.0"
   }
 }
